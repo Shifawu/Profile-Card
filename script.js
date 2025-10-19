@@ -1,6 +1,4 @@
-const dateELement = document.createElement("p");
-dateELement.setAttribute("data-testid", "currentTimeUTC");
-
-dateELement.textContent = new Date().toUTCString();
-
-document.querySelector(".date-section").appendChild(dateELement);
+const dateElement = document.createElement("p");
+    dateElement.setAttribute("data-testid", "test-user-time");
+    dateElement.textContent = Date.now();
+    document.querySelector(".date-section").appendChild(dateElement);
