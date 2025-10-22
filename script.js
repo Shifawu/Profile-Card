@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Time updater (formatted)
 const t = document.getElementById("profile-time");
 function updateTime() {
@@ -72,3 +73,9 @@ form.addEventListener("submit", (e) => {
     form.reset();
   }
 });
+=======
+const dateElement = document.createElement("p");
+    dateElement.setAttribute("data-testid", "test-user-time");
+    dateElement.textContent = Date.now();
+    document.querySelector(".date-section").appendChild(dateElement);
+>>>>>>> 6d5d05b0c43cb53235bdb80c544dd418c2f3ca73
