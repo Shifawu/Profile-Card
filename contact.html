@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Shifawu Bello</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="site-title">Shifawu Bello</div>
+      <nav class="top-nav">
+        <ul class="desktop">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></button>
+        <ul class="mobile" id="mobile-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact" class="page-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm" novalidate>
+          <label for="cname">Full Name</label>
+          <input data-testid="test-contact-name" aria-describedby="error-name" id="cname" type="text" placeholder="Enter Your Name" required />
+          <div data-testid="test-contact-error-name" id="err-name" class="error"></div>
+
+          <label for="cemail">Email</label>
+          <input  data-testid="test-contact-email" aria-describedby="error-email" id="cemail" type="email" placeholder="Enter Your Email" required />
+          <div data-testid="test-contact-error-email" id="err-email" class="error"></div>
+
+          <label for="csubject">Subject</label>
+          <input data-testid="test-contact-subject" aria-describedby="error-subject" id="csubject" type="text" placeholder="Subject" required />
+          <div data-testid="test-contact-error-subject" id="err-subject" class="error"></div>
+
+          <label for="cmessage">Message</label>
+          <textarea data-testid="test-contact-message" aria-describedby="error-message" id="cmessage" rows="5" placeholder="Write your message" required></textarea>
+          <div data-testid="test-contact-error-message" id="err-message" class="error"></div>
+
+          <button data-testid="test-contact-submit" type="submit">Send Message</button>
+          <div id="contact-success" data-testid="test-contact-success" class="success"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Shifawu Bello</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
